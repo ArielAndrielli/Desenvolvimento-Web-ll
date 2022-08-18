@@ -15,6 +15,8 @@
     "typescript": "^4.7.4"
   },
   "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node test/teste.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
