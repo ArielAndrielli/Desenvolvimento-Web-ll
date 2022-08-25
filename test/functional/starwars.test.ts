@@ -23,22 +23,22 @@ class Operation{
      
 
     it('Soma de a + b', ()=>{
-        const result: number = soma(10,10)
-        expect(soma(10,10)).toBe(20)
+        const result: number = new Operation().soma(10,10)
+        expect(new Operation().soma(10,10)).toBe(20)
     });
 
     it('Subtracao de a - b', ()=>{
-        const result: number = sub(10,10)
-        expect(sub(10,10)).toBe(0)
+        const result: number = new Operation().sub(10,10)
+        expect(new Operation().sub(10,10)).toBe(0)
     });
 
     it('Multiplicacao de 10 por 10', ()=>{
-        const result: number = mult(10,10)
-        expect (mult(10,10)).toBe(100)
+        const result: number = new Operation().mult(10,10)
+        expect (new Operation().mult(10,10)).toBe(100)
     });
 
     it('Divisao de 10 por 10', ()=>{
-        const result: number = divi(10,10)
-        expect(divi(10,10)).toBe(1)
+        const result: number = new Operation().divi(10,10)
+        expect(new Operation().divi(10,10)).toBe(1)
     });
 });
